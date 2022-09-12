@@ -1,13 +1,6 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Phasellus ut nibh nec turpis consequat fringilla dictum at risus. 
-Sed eros elit, tempor eu tincidunt non, sodales nec sapien. 
-Nunc rutrum justo ac leo gravida adipiscing. 
-Morbi bibendum feugiat pulvinar. 
-Praesent rhoncus mauris ac tortor lobortis sit amet mollis eros interdum. 
-Vestibulum at malesuada metus. Maecenas ante lorem, imperdiet vel venenatis in, semper at odio. 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-Proin cursus augue vel ipsum ultrices gravida. 
-Duis et turpis non nisl egestas porta. 
-Aliquam vitae augue eget libero consectetur pellentesque. 
-Etiam ullamcorper facilisis dui, at cursus enim mollis eu. 
-Quisque pretium felis et dolor auctor at pharetra est iaculis.
+
+A Dexter é uma empresa de logística especializada em transportes terrestres que oferece serviços de carga e descarga, armazenagem, manuseio e transporte de produtos. A empresa atua em todo o território nacional, com sede em São Paulo. 
+
+A Dexter oferece uma ampla rede de transporte, com mais de 200 veículos, incluindo caminhões, carretas, semirreboques e vans, que atendem aos diversos tipos de cargas. A empresa dispõe de um parque de máquinas moderno e bem equipado, com equipamentos de movimentação de cargas, como empilhadeiras, paleteiras e guindastes.
+
+A Dexter oferece ainda um serviço de monitoramento de cargas, que permite acompanhar em tempo real o status da carga, desde o seu embarque até o seu destino final. 

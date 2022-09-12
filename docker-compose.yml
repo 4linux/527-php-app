@@ -2,18 +2,23 @@ version: "3"
 services:
     database:
         image: postgres:10.5
+        build:
+            context: ./dockerfiles
+            dockerfile: db.dockerfile
         restart: always
         environment:
-            - POSTGRES_USER=dexter
-            - POSTGRES_PASSWORD=dexter
-            - POSTGRES_DB=dexter
-            - PGDATA=/tmp
+            - POSTGRES_USER=${POSTGRES_USER}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+            - POSTGRES_DB=${POSTGRES_DB}
+            - PGDATA=${PGDATA}
         volumes:
             - pgdata:/var/lib/postgresql/data/dbfiles
+            - "./include/dump/:/dump/"
         ports:
             - '5432:5432'
     webserver:
         image: webdevops/apache:alpine
+        restart: always
         depends_on:
             - php
         ports: 
@@ -30,11 +35,16 @@ services:
         build:
             context: ./dockerfiles
             dockerfile: php7.1.dockerfile
+        restart: always
         volumes:
             - ".:/var/www/html"
             - "./dockerfiles/config/php.ini:/usr/local/etc/php/php.ini"
             - "./dockerfiles/config/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini"
         environment:
-            PATH: "/root/.composer/vendor/bin:${PATH}"
+            - PATH="/root/.composer/vendor/bin:${PATH}"
+            - POSTGRES_USER=${POSTGRES_USER}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+            - POSTGRES_DB=${POSTGRES_DB}
+            - PGDATA=${PGDATA}
 volumes:
     pgdata:

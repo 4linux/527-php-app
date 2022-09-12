@@ -1,5 +1,5 @@
             <footer>
-                <p>&copy; 4linux 2012</p>
+                <p>&copy; DevSecOps 4Linux - Stay Safe</p>
             </footer>
         </div> <!-- /container -->
     </body>

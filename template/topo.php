@@ -32,7 +32,11 @@
 							<a href="<?php echo $pagina['url'] ?>"> <?php echo $pagina['label'] ?></a>
 						</li>
 					<?php } ?>
+                    <li>
+                        <a href="../admin/">Admin</a>
+                    </li>
                     </ul>
+                    
                 </div>
             </div>
 
